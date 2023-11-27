@@ -39,11 +39,9 @@ char	*put_s1_s2(char const *s1, char const *s2, size_t len1, size_t len2)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
-	size_t	i;
 	size_t	len1;
 	size_t	len2;
 
-	i = 0;
 	len1 = ft_strlen(s1);
 	len2 = ft_strlen(s2);
 	if (!s2 && !s1)

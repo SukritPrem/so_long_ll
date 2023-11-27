@@ -88,7 +88,6 @@ char	*ft_read_and_init_i(int *number_read, char *answer, int fd, int *i_main)
 {
 	char	*tmp;
 	char	*buffer;
-	int		i;
 
 	buffer = malloc(BUFFER_SIZE + 1);
 	while (*number_read != 0)
@@ -99,7 +98,6 @@ char	*ft_read_and_init_i(int *number_read, char *answer, int fd, int *i_main)
 		if (!*number_read)
 			break ;
 		buffer[*number_read] = '\0';
-		i = 0;
 		if (!(answer))
 			answer = ft_strdup("");
 		tmp = ft_strjoin(answer, buffer);
